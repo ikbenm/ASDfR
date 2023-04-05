@@ -1,0 +1,6 @@
+<launch>
+  <node pkg="CenterofGravity" exec="COG" name="cog_topic"/> 
+  <node pkg="image_tools" exec="cam2image" name="image"/>
+  </node>
+  //like in 1.2.1 the same thing happens the simulator wants a webcam_input instead of a image
+</launch>
