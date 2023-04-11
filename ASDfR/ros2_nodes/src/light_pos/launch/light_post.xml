@@ -1,9 +1,8 @@
 <launch>
   <node pkg="closed_loop" exec="controller" name="setpoint"/>
   <node pkg="jiwy_simulator" exec="jiwy_simulator" name="sim"/>
-  <node pkg="light_pos" exec="light_pos" name="cog_topic"/> //this causes that the publischer_member_function is also launched
+  <node pkg="light_pos" exec="light_pos" name="cog_topic"/> 
   <node pkg="image_tools" exec="cam2image" name="image">
-  
     <remap from="/image" to="webcam_input"/>
 
   </node>
